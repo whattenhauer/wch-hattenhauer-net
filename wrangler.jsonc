@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "wch-hattenhauer-net",
+  "main": "src/index.js",
+  "compatibility_date": "2026-07-29",
+
+  "routes": [
+    { "pattern": "wch.hattenhauer.net", "custom_domain": true }
+  ],
+
+  "r2_buckets": [
+    { "binding": "ASSETS", "bucket_name": "wch-assets" }
+  ]
+}
